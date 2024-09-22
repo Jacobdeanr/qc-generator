@@ -60,6 +60,6 @@ pip install -r requirements.txt
         - Set whether the prop is static and if it should cast shadows from texture alpha.
 
 5. Generate the QC File
-- Click the Generate QC File button.
-- The QC file will be generated and saved in the same directory as your SMD file.
-- A success message will confirm the location of the generated QC file.
+    - Click the Generate QC File button.
+    - The QC file will be generated and saved in the same directory as your SMD file.
+    - A success message will confirm the location of the generated QC file.
