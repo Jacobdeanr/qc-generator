@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 import yaml
 import sys
+import webbrowser
 
 def resource_path(relative_path):
     try:
@@ -80,6 +81,10 @@ class QCFileGenerator:
         filemenu.add_separator()
         filemenu.add_command(label="Exit", command=self.master.quit)
         menubar.add_cascade(label="File", menu=filemenu)
+
+        helpmenu = tk.Menu(menubar, tearoff=0)
+        helpmenu.add_command(label="About", command=self.open_about)
+        menubar.add_cascade(label="Help", menu=helpmenu)
         self.master.config(menu=menubar)
 
         # Main Frame
@@ -306,6 +311,9 @@ class QCFileGenerator:
             self.model_name.set(f'{smd_name_no_ext}.mdl')
             # Infer cdmaterials if Model Working Folder is specified
             self.infer_cdmaterials()
+    
+    def open_about(self):
+        webbrowser.open("https://github.com/Jacobdeanr/qc-generator")
 
     def infer_cdmaterials(self):
         working_folder = self.model_working_folder.get().strip()
