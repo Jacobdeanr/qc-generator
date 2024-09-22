@@ -1,32 +1,365 @@
 types:
+  Concrete_Rock:
+    Baserock:
+      description: ""
+      supported_games: "Base"
+    Brick:
+      description: ""
+      supported_games: "Base"
+    Concrete:
+      description: ""
+      supported_games: "Base"
+    Concrete_block:
+      description: "9x12 prefabricated concrete cinder blocks."
+      supported_games: "Base"
+    Gravel:
+      description: ""
+      supported_games: "Base"
+    Rock:
+      description: "Solid rock (Small sounds)."
+      supported_games: "Base"
+    Sheetrock:
+      description: ""
+      supported_games: "l4d2, csgo"
+    Cavern_rock:
+      description: ""
+      supported_games: "ep2"
+
+  Metal:
+    Canister:
+      description: "Large oxygen tank, propane tank, welding tank."
+      supported_games: "Base"
+    Chain:
+      description: "Metal chain."
+      supported_games: "Base"
+    Chainlink:
+      description: "Chainlink fencing material."
+      supported_games: "Base"
+    Combine_metal:
+      description: ""
+      supported_games: "Base"
+    Crowbar:
+      description: ""
+      supported_games: "Base"
+    Floating_metal_barrel:
+      description: ""
+      supported_games: "Base"
+    Grenade:
+      description: "Solid hand grenade."
+      supported_games: "Base"
+    Gunship:
+      description: ""
+      supported_games: "Base"
+    Metal:
+      description: ""
+      supported_games: "Base"
+    Metal_barrel:
+      description: "Larger metal barrel, metal oil drum."
+      supported_games: "csgo"
+    Metal_bouncy:
+      description: ""
+      supported_games: "Base"
+    Metal_Box:
+      description: "Smaller metal box < 2' thickness"
+      supported_games: "Base"
+    Metal_seafloorcar:
+      description: ""
+      supported_games: "Base"
+    Metalgrate:
+      description: "Metal grating, used for decking."
+      supported_games: "Base"
+    Metalpanel:
+      description: "Thick solid steel panel - used for solid wAll, floor, machine construction."
+      supported_games: "Base"
+    Metalvent:
+      description: "~1mm thick metal."
+      supported_games: "Base"
+    Metalvehicle:
+      description: ""
+      supported_games: "Base"
+    Paintcan:
+      description: "Smaller metal can."
+      supported_games: "Base"
+    Popcan:
+      description: "Small aluminum can, full."
+      supported_games: "Base"
+    Roller:
+      description: "Roller NPC."
+      supported_games: "Base"
+    Slipperymetal:
+      description: ""
+      supported_games: "Base"
+    Solidmetal:
+      description: "Almost nothing is solid metal - so metal is sheet metal."
+      supported_games: "Base"
+    Strider:
+      description: ""
+      supported_games: "Base"
+    Weapon:
+      description: "Sounds for when weapons drop."
+      supported_games: "Base"
+    Strongman_bell:
+      description: "Sounds like a boxing ring bell when hit."
+      supported_games: "l4d2, csgo"
+    Slipperyslide:
+      description: "Like SlipperyMetal, but uses SolidMetal sounds."
+      supported_games: "l4d2, csgo"
+    Metal_shield:
+      description: "Uses weapon sounds."
+      supported_games: "csgo"
+
+  Wood:
+    Wood:
+      description: "Generic wood."
+      supported_games: "Base"
+    Wood_Box:
+      description: ""
+      supported_games: "Base"
+    Wood_Crate:
+      description: "Large crate, large wood furniture (bookcases, tables)."
+      supported_games: "Portal2, tf2, l4d, l4d2"
+    Wood_Dense:
+      description: ""
+      supported_games: "csgo"
+    Wood_Furniture:
+      description: "Small wood furniture - chairs, Small tables."
+      supported_games: "Base"
+    Wood_LowDensity:
+      description: "Small crate."
+      supported_games: "Portal2, tf2, l4d, l4d2"
+    Wood_Plank:
+      description: "Wood board, floorboard, plank."
+      supported_games: "Base"
+    Wood_Panel:
+      description: "Plywood panel, wood door panel."
+      supported_games: "Base"
+    Wood_Solid:
+      description: "Solid 6x6 or greater block, post or tree."
+      supported_games: "Base"
+    Woodladder:
+      description: "A ladder that makes wood sounds when climbing."
+      supported_games: "l4d2, csgo"
+
+  Terrain:
+    Dirt:
+      description: ""
+      supported_games: "Base"
+    Grass:
+      description: ""
+      supported_games: "Base"
+    Gravel:
+      description: ""
+      supported_games: "Base"
+    Mud:
+      description: ""
+      supported_games: "Base"
+    Quicksand:
+      description: ""
+      supported_games: "Base"
+    Sand:
+      description: ""
+      supported_games: "Base"
+    Slipperyslime:
+      description: ""
+      supported_games: "Base"
+    Antlionsand:
+      description: ""
+      supported_games: "Base"
+    Sugarcane:
+      description: ""
+      supported_games: "l4d2, csgo"
+
+  Liquid:
+    Slime:
+      description: ""
+      supported_games: "Base"
+    Water:
+      description: ""
+      supported_games: "Base"
+    Wade:
+      description: "Water material for walking in/on water at knee height."
+      supported_games: "Base"
+    Puddle:
+      description: ""
+      supported_games: "Base"
+    Wet:
+      description: "Doesn't actuAlly do anything."
+      supported_games: "l4d2, csgo"
+
+  Frozen:
+    Ice:
+      description: ""
+      supported_games: "Base"
+    Snow:
+      description: ""
+      supported_games: "Base"
+
+  Organic:
+    Alienflesh:
+      description: ""
+      supported_games: "Base"
+    Antlion:
+      description: ""
+      supported_games: "Base"
+    Antlion_eggshell:
+      description: ""
+      supported_games: "ep2"
+    Armorflesh:
+      description: "Flesh for physics, metal for bullet fx."
+      supported_games: "Base"
+    Bloodyflesh:
+      description: ""
+      supported_games: "Base"
+    Flesh:
+      description: "Medium-sized body."
+      supported_games: "Base"
+    Foliage:
+      description: ""
+      supported_games: "Base"
+    Foliage_leaf:
+      description: "Same as Foliage, but uses Foliage sounds, instead of Dirt sounds."
+      supported_games: "l4d2"
+    Hunter:
+      description: ""
+      supported_games: "ep2"
+    Watermelon:
+      description: ""
+      supported_games: "Base"
+    Zombieflesh:
+      description: ""
+      supported_games: "Base"
+
+  Manufactured:
+    Advisor_shield:
+      description: ""
+      supported_games: "ep2"
+    Asphalt:
+      description: "Missing."
+      supported_games: "Base"
+    Glass:
+      description: "Pane of glass, computer screen, window, glass door..."
+      supported_games: "Base"
+    Glassbottle:
+      description: "Glass soda bottle, cup, plate, jar..."
+      supported_games: "Base"
+    Glassfloor:
+      description: "Like Glass, but with a normal friction value."
+      supported_games: "csgo"
+    Combine_glass:
+      description: ""
+      supported_games: "Base"
+    Tile:
+      description: ""
+      supported_games: "Base"
+    Paper:
+      description: ""
+      supported_games: "Base"
+    Papercup:
+      description: ""
+      supported_games: "Base"
+    Cardboard:
+      description: ""
+      supported_games: "Base"
+    Plaster:
+      description: "DrywAll, office wAll material, sheetrock."
+      supported_games: "Base"
+    Plastic_barrel:
+      description: "Larger plastic barrel, hollow, soft plastic."
+      supported_games: "Base"
+    Plastic_barrel_buoyant:
+      description: ""
+      supported_games: "Base"
+    Plastic_Box:
+      description: "Small - Medium plastic box, hard plastic."
+      supported_games: "Base"
+    Plastic:
+      description: "Smaller generic hard plastic."
+      supported_games: "Base"
+    Rubber:
+      description: "Solid rubber floor mat, solid rubber tire."
+      supported_games: "Base"
+    Rubbertire:
+      description: "Hollow rubber tire."
+      supported_games: "Base"
+    Slidingrubbertire:
+      description: ""
+      supported_games: "Base"
+    Slidingrubbertire_front:
+      description: ""
+      supported_games: "Base"
+    Slidingrubbertire_rear:
+      description: ""
+      supported_games: "Base"
+    Jeeptire:
+      description: ""
+      supported_games: "Base"
+    Brakingrubbertire:
+      description: ""
+      supported_games: "Base"
+    Jalopy:
+      description: ""
+      supported_games: "ep2"
+    Jalopytire:
+      description: ""
+      supported_games: "ep2"
+    Slidingrubbertire_jalopyfront:
+      description: ""
+      supported_games: "ep2"
+    Slidingrubbertire_jalopyrear:
+      description: ""
+      supported_games: "ep2"
+    Clay:
+      description: "Ceramic jug, mug."
+      supported_games: "l4d2, csgo"
+    Porcelain:
+      description: "Tubs, urinals, sinks."
+      supported_games: "Base"
+    Upholstery:
+      description: ""
+      supported_games: "Base"
+
+  Miscellaneous:
+    Carpet:
+      description: ""
+      supported_games: "Base"
+    Ceiling_tile:
+      description: "Acoustic ceiling tiles, sound baffles, crumbly plaster."
+      supported_games: "Base"
+    Computer:
+      description: "Computer case, tech equipment case."
+      supported_games: "Base"
+    Pottery:
+      description: ""
+      supported_games: "Base"
+  
   Special:
     Blockbullets:
-      description: "Blocks bullets entirely, because the Tools/ToolsBlockBullets doesn't really block bullets."
+      description: "Blocks bullets entirely, because the Tools/ToolsBlockBullets doesn't reAlly block bullets."
       supported_games: "csgo"
     Default:
       description: ""
-      supported_games: "ALL"
+      supported_games: "Base"
     Default_silent:
       description: "For invisible collision materials, like sky."
-      supported_games: "ALL"
+      supported_games: "Base"
     Floatingstandable:
       description: "Used for puzzles where something floats, but the player can stand on it without sinking beneath the water."
-      supported_games: "ALL"
+      supported_games: "Base"
     Item:
-      description: "Small med kit, smaller tech items, battery."
-      supported_games: "ALL"
+      description: "Small med kit, Smaller tech items, battery."
+      supported_games: "Base"
     Ladder:
       description: "Fake material for walking on ladders."
-      supported_games: "ALL"
+      supported_games: "Base"
     No_decal:
       description: ""
-      supported_games: "ALL"
+      supported_games: "Base"
     Player:
       description: "Special materials for player controller."
-      supported_games: "ALL"
+      supported_games: "Base"
     Player_control_clip:
       description: "Special materials for player controller."
-      supported_games: "ALL"
+      supported_games: "Base"
     Bat:
       description: "Like 'Weapon' but used for melee weapons to give specific sounds when dropped."
       supported_games: "l4d2"
@@ -63,339 +396,3 @@ types:
     Sword:
       description: "Like 'Weapon' but used for melee weapons to give specific sounds when dropped."
       supported_games: "l4d2"
-
-  Concrete_Rock:
-    Baserock:
-      description: "Missing."
-      supported_games: "ALL"
-    Boulder:
-      description: "Will cause material glitches if used in models."
-      supported_games: "ALL"
-    Brick:
-      description: ""
-      supported_games: "ALL"
-    Concrete:
-      description: ""
-      supported_games: "ALL"
-    Concrete_block:
-      description: "9x12 prefabricated concrete cinder blocks."
-      supported_games: "ALL"
-    Gravel:
-      description: ""
-      supported_games: "ALL"
-    Rock:
-      description: "Solid rock (small sounds)."
-      supported_games: "ALL"
-    Sheetrock:
-      description: ""
-      supported_games: "l4d2, csgo"
-    Cavern_rock:
-      description: ""
-      supported_games: "hl2ep2"
-
-  Metal:
-    Canister:
-      description: "Large oxygen tank, propane tank, welding tank."
-      supported_games: "ALL"
-    Chain:
-      description: "Metal chain."
-      supported_games: "ALL"
-    Chainlink:
-      description: "Chainlink fencing material."
-      supported_games: "ALL"
-    Combine_metal:
-      description: ""
-      supported_games: "ALL"
-    Crowbar:
-      description: ""
-      supported_games: "ALL"
-    Floating_metal_barrel:
-      description: ""
-      supported_games: "ALL"
-    Grenade:
-      description: "Solid hand grenade."
-      supported_games: "ALL"
-    Gunship:
-      description: ""
-      supported_games: "ALL"
-    Metal:
-      description: ""
-      supported_games: "ALL"
-    Metal_barrel:
-      description: "Larger metal barrel, metal oil drum."
-      supported_games: "csgo"
-    Metal_bouncy:
-      description: ""
-      supported_games: "ALL"
-    Metal_Box:
-      description: "Smaller metal box (< 2' width/height/depth)."
-      supported_games: "ALL"
-    Metal_seafloorcar:
-      description: ""
-      supported_games: "ALL"
-    Metalgrate:
-      description: "Metal grating, used for decking."
-      supported_games: "ALL"
-    Metalpanel:
-      description: "Thick solid steel panel - used for solid wall, floor, machine construction."
-      supported_games: "ALL"
-    Metalvent:
-      description: "~1mm thick metal."
-      supported_games: "ALL"
-    Metalvehicle:
-      description: ""
-      supported_games: "ALL"
-    Paintcan:
-      description: "Smaller metal can."
-      supported_games: "ALL"
-    Popcan:
-      description: "Small aluminum can, full."
-      supported_games: "ALL"
-    Roller:
-      description: "Roller NPC."
-      supported_games: "ALL"
-    Slipperymetal:
-      description: ""
-      supported_games: "ALL"
-    Solidmetal:
-      description: "Almost nothing is solid metal - so metal is sheet metal."
-      supported_games: "ALL"
-    Strider:
-      description: ""
-      supported_games: "ALL"
-    Weapon:
-      description: "Sounds for when weapons drop."
-      supported_games: "ALL"
-    Strongman_bell:
-      description: "Sounds like a boxing ring bell when hit."
-      supported_games: "l4d2, csgo"
-    Slipperyslide:
-      description: "Like SlipperyMetal, but uses SolidMetal sounds."
-      supported_games: "l4d2, csgo"
-    Metal_shield:
-      description: "Uses weapon sounds."
-      supported_games: "csgo"
-
-  Wood:
-    Wood:
-      description: "Generic wood."
-      supported_games: "ALL"
-    Wood_Box:
-      description: ""
-      supported_games: "ALL"
-    Wood_Crate:
-      description: "Large crate, large wood furniture (bookcases, tables)."
-      supported_games: "Portal2, tf2, l4dseries"
-    Wood_Dense:
-      description: ""
-      supported_games: "csgo"
-    Wood_Furniture:
-      description: "Small wood furniture - chairs, small tables."
-      supported_games: "ALL"
-    Wood_LowDensity:
-      description: "Small crate."
-      supported_games: "Portal2, tf2, l4dseries"
-    Wood_Plank:
-      description: "Wood board, floorboard, plank."
-      supported_games: "ALL"
-    Wood_Panel:
-      description: "Plywood panel, wood door panel."
-      supported_games: "ALL"
-    Wood_Solid:
-      description: "Solid 6x6 or greater block, post or tree."
-      supported_games: "ALL"
-    Woodladder:
-      description: "A ladder that makes wood sounds when climbing."
-      supported_games: "l4d2, csgo"
-
-  Terrain:
-    Dirt:
-      description: ""
-      supported_games: "ALL"
-    Grass:
-      description: ""
-      supported_games: "ALL"
-    Gravel:
-      description: ""
-      supported_games: "ALL"
-    Mud:
-      description: ""
-      supported_games: "ALL"
-    Quicksand:
-      description: ""
-      supported_games: "ALL"
-    Sand:
-      description: ""
-      supported_games: "ALL"
-    Slipperyslime:
-      description: ""
-      supported_games: "ALL"
-    Antlionsand:
-      description: ""
-      supported_games: "ALL"
-    Sugarcane:
-      description: ""
-      supported_games: "l4d2, csgo"
-
-  Liquid:
-    Slime:
-      description: ""
-      supported_games: "ALL"
-    Water:
-      description: ""
-      supported_games: "ALL"
-    Wade:
-      description: "Water material for walking in/on water at knee height."
-      supported_games: "ALL"
-    Puddle:
-      description: ""
-      supported_games: "ALL"
-    Wet:
-      description: "Doesn't actually do anything."
-      supported_games: "l4d2, csgo"
-
-  Frozen:
-    Ice:
-      description: ""
-      supported_games: "ALL"
-    Snow:
-      description: ""
-      supported_games: "ALL"
-
-  Organic:
-    Alienflesh:
-      description: ""
-      supported_games: "ALL"
-    Antlion:
-      description: ""
-      supported_games: "ALL"
-    Antlion_eggshell:
-      description: ""
-      supported_games: "hl2ep2"
-    Armorflesh:
-      description: "Flesh for physics, metal for bullet fx."
-      supported_games: "ALL"
-    Bloodyflesh:
-      description: ""
-      supported_games: "ALL"
-    Flesh:
-      description: "Medium-sized body."
-      supported_games: "ALL"
-    Foliage:
-      description: ""
-      supported_games: "ALL"
-    Foliage_leaf:
-      description: "Same as Foliage, but uses Foliage sounds, instead of Dirt sounds."
-      supported_games: "l4d2"
-    Hunter:
-      description: ""
-      supported_games: "hl2ep2"
-    Watermelon:
-      description: ""
-      supported_games: "ALL"
-    Zombieflesh:
-      description: ""
-      supported_games: "ALL"
-
-  Manufactured:
-    Advisor_shield:
-      description: ""
-      supported_games: "hl2ep2"
-    Asphalt:
-      description: "Missing."
-      supported_games: "ALL"
-    Glass:
-      description: "Pane of glass, computer screen, window, glass door..."
-      supported_games: "ALL"
-    Glassbottle:
-      description: "Glass soda bottle, cup, plate, jar..."
-      supported_games: "ALL"
-    Glassfloor:
-      description: "Like Glass, but with a normal friction value."
-      supported_games: "csgo"
-    Combine_glass:
-      description: ""
-      supported_games: "ALL"
-    Tile:
-      description: ""
-      supported_games: "ALL"
-    Paper:
-      description: ""
-      supported_games: "ALL"
-    Papercup:
-      description: ""
-      supported_games: "ALL"
-    Cardboard:
-      description: ""
-      supported_games: "ALL"
-    Plaster:
-      description: "Drywall, office wall material, sheetrock."
-      supported_games: "ALL"
-    Plastic_barrel:
-      description: "Larger plastic barrel, hollow, soft plastic."
-      supported_games: "ALL"
-    Plastic_barrel_buoyant:
-      description: ""
-      supported_games: "ALL"
-    Plastic_Box:
-      description: "Small - Medium plastic box, hard plastic."
-      supported_games: "ALL"
-    Plastic:
-      description: "Smaller generic hard plastic."
-      supported_games: "ALL"
-    Rubber:
-      description: "Solid rubber floor mat, solid rubber tire."
-      supported_games: "ALL"
-    Rubbertire:
-      description: "Hollow rubber tire."
-      supported_games: "ALL"
-    Slidingrubbertire:
-      description: ""
-      supported_games: "ALL"
-    Slidingrubbertire_front:
-      description: ""
-      supported_games: "ALL"
-    Slidingrubbertire_rear:
-      description: ""
-      supported_games: "ALL"
-    Jeeptire:
-      description: ""
-      supported_games: "ALL"
-    Brakingrubbertire:
-      description: ""
-      supported_games: "ALL"
-    Jalopy:
-      description: ""
-      supported_games: "hl2ep2"
-    Jalopytire:
-      description: ""
-      supported_games: "hl2ep2"
-    Slidingrubbertire_jalopyfront:
-      description: ""
-      supported_games: "hl2ep2"
-    Slidingrubbertire_jalopyrear:
-      description: ""
-      supported_games: "hl2ep2"
-    Clay:
-      description: "Ceramic jug, mug."
-      supported_games: "l4d2, csgo"
-    Porcelain:
-      description: "Tubs, urinals, sinks."
-      supported_games: "ALL"
-    Upholstery:
-      description: ""
-      supported_games: "ALL"
-
-  Miscellaneous:
-    Carpet:
-      description: ""
-      supported_games: "ALL"
-    Ceiling_tile:
-      description: "Acoustic ceiling tiles, sound baffles, crumbly plaster."
-      supported_games: "ALL"
-    Computer:
-      description: "Computer case, tech equipment case."
-      supported_games: "ALL"
-    Pottery:
-      description: ""
-      supported_games: "ALL"
