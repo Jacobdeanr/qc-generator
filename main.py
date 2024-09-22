@@ -2,6 +2,16 @@ import os
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 import yaml
+import sys
+
+def resource_path(relative_path):
+    try:
+        # PyInstaller creates a temp folder and stores the path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 
 class Tooltip:
@@ -342,8 +352,9 @@ class QCFileGenerator:
         self.surfaceprop_games_text.delete(1.0, tk.END)
         self.surfaceprop_games_text.insert(tk.END, supported_games)
 
+
     def load_surfaceprop_yaml(self):
-        yaml_file_path = 'surfaceprop.yaml'
+        yaml_file_path = resource_path('surfaceprop.yaml')
 
         if not os.path.isfile(yaml_file_path):
             messagebox.showerror("Error", f"surfaceprop.yaml file not found at {yaml_file_path}")
