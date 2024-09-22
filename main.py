@@ -64,6 +64,7 @@ class QCFileGenerator:
         self.scale = tk.DoubleVar(value=1.0)
         self.staticprop = tk.BooleanVar(value=False)
         self.casttextureshadows = tk.BooleanVar(value=False)
+        self.mostlyopaque = tk.BooleanVar(value=False)
         self.collisionmodel = tk.StringVar()
         self.mass = tk.DoubleVar(value=35.0)
         self.concave = tk.BooleanVar()
@@ -181,6 +182,10 @@ class QCFileGenerator:
         self.casttextureshadows_checkbutton = tk.Checkbutton(form_frame, text="Cast shadows from texture's alpha", variable=self.casttextureshadows)
         self.casttextureshadows_checkbutton.grid(row=3, column=0, columnspan=2, sticky='w')
         Tooltip(self.casttextureshadows_checkbutton, "Indicates the model should cast texture-based shadows from $alphatest and $translucent materials while compiling map in VRAD.")
+
+        self.mostlyopaque_checkbutton = tk.Checkbutton(form_frame, text="Mostly Opaque", variable=self.mostlyopaque)
+        self.mostlyopaque_checkbutton.grid(row=4, column=0, columnspan=2, sticky='w')
+        Tooltip(self.mostlyopaque_checkbutton, "Causes the model to be rendered in two passes.Can be used to improve the visual quality of models such as foliage or underbrush, by improving the lighting on the translucent materials.")
 
         self.update_casttextureshadows_state()
 
@@ -440,6 +445,11 @@ class QCFileGenerator:
 
         if self.casttextureshadows.get():
             qc_content += '$casttextureshadows\n'
+
+        if self.mostlyopaque.get():
+            qc_content += '$mostlyopaque\n'
+        else:
+            qc_content += '$opaque\n'
 
         # Collision settings
         if self.collisionmodel.get():
